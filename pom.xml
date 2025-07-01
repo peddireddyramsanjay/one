@@ -24,6 +24,17 @@
 		</dependency>
 
 	</dependencies>
+
+	<build>
+    <plugins>
+      <!-- ✅ Fix: Add maven-war-plugin with a version compatible with Java 17 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+      </plugin>
+    </plugins>
+  </build>
 	
 	<distributionManagement>
 		 <snapshotRepository>
